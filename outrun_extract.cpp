@@ -9,7 +9,7 @@ using namespace std;
         0x786807 Camino A Mi Amor (Version 1): 22,488 bytes [CRC32: 0056B27D]
         0x78d807 Step On Beat (Arcade Version): 14,480 bytes [CRC32: 93BBCDAC]
         0x794807 Radiation: 28,274 bytes [CRC32: 1BAB7DDA]
-        0x794807 Camino A Mi Amor (Version 2): 22,488 bytes [CRC32: C07D2D50]
+        0x780E15 Camino A Mi Amor (Version 2): 22,488 bytes [CRC32: C07D2D50]
         0x7a2807 Step On Beat (Megadrive Version): 10,503 bytes [CRC32: 7DB6F98E]
 */
 
@@ -31,13 +31,13 @@ int main()
     const TrackInfo CAMINO_V1 = {"switch_camino.bin", 22488, 0x786807};
     const TrackInfo STEP_ON_BEAT = {"switch_steponbeat.bin", 14480,0x78d807};
     const TrackInfo RADIATION = {"switch_radiation.bin", 28274,0x794807 };
-    const TrackInfo CAMINO_V2 = {"switch_camino.bin", 22488 , 0x794807};
+    const TrackInfo CAMINO_V2 = {"switch_camino.bin", 22488 , 0x780E15};
     const TrackInfo STEP_ON_BEAT_MD = {"switch_steponbeat_md.bin", 10503, 0x7a2807};
 
     extractAudio(CRUISING_LINE);
     extractAudio(STEP_ON_BEAT);
     extractAudio(RADIATION);
-    extractAudio(CAMINO_V2);
+    extractAudio(CAMINO_V1);
     extractAudio(STEP_ON_BEAT_MD);
 
     return 0;
