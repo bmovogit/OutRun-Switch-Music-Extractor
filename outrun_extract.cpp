@@ -27,9 +27,18 @@ void extractAudio(TrackInfo);
 int main()
 {
     // Constants for all the tracks to extract
-    const TrackInfo CRUISING_LINE = {"switch_cruisingline.bin", 24369, 7862279};
+    const TrackInfo CRUISING_LINE = {"switch_cruisingline.bin", 24369, 0x77f807};
+    const TrackInfo CAMINO_V1 = {"switch_camino.bin", 22488, 0x786807};
+    const TrackInfo STEP_ON_BEAT = {"switch_steponbeat.bin", 14480,0x78d807};
+    const TrackInfo RADIATION = {"switch_radiation.bin", 28274,0x794807 };
+    const TrackInfo CAMINO_V2 = {"switch_camino.bin", 22488 , 0x794807};
+    const TrackInfo STEP_ON_BEAT_MD = {"switch_steponbeat_md.bin", 10503, 0x7a2807};
 
     extractAudio(CRUISING_LINE);
+    extractAudio(STEP_ON_BEAT);
+    extractAudio(RADIATION);
+    extractAudio(CAMINO_V2);
+    extractAudio(STEP_ON_BEAT_MD);
 
     return 0;
 }
