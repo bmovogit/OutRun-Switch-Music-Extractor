@@ -43,3 +43,6 @@
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+# Output files
+*.bin
