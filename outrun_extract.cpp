@@ -16,7 +16,7 @@ using namespace std;
 // Struct that contains the information for a given track
 struct TrackInfo
 {
-    string name; // The name of the track
+    string fileName; // The file name of the track
     streamsize size; // Size of the track in bytes
     streampos  offset; // Offset of the track
 };
@@ -27,7 +27,7 @@ void extractAudio(TrackInfo);
 int main()
 {
     // Constants for all the tracks to extract
-    const TrackInfo CRUISING_LINE = {"Cruising Line", 24369, 7862279};
+    const TrackInfo CRUISING_LINE = {"switch_cruisingline.bin", 24369, 7862279};
 
     extractAudio(CRUISING_LINE);
 
@@ -54,7 +54,7 @@ void extractAudio(TrackInfo track)
     outRunFile.close();
     
     // Create Track Name.bin to write to
-    ofstream outputFile(track.name + ".bin", ios::out | ios::binary);
+    ofstream outputFile(track.fileName, ios::out | ios::binary);
     
     // Throw exception if outputFile failed to create track file
     if (outputFile.fail())
