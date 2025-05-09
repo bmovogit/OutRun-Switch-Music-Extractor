@@ -46,3 +46,6 @@
 
 # Output files
 *.bin
+
+# Decompressed switch executable
+main_decompressed
